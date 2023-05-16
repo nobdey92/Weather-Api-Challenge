@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assest/styles.css">
+    <title>Weather App</title>
 </head>
 
 <body>
-    <section class="top-banner">
-        <div class="container">
-            <h1 class="heading">Simple Weather App</h1>
-            <form>
-                <input type="text" placeholder="Search For A Place" autofocus>
-                <button type="submit">SUBMIT</button>
-                <span class="msg"></span>
-            </form>
+
+    <head>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <section class="main">
+                <section class="inputs">
+                    <input type="text" placeholder="Enter any city..." id="cityinput">
+                    <input type="submit" value="Submit" id="add">
+                    <button placeholder="submit" id="add"></button>
+                </section>
+
+                <section class="display">
+                    <div class="wrapper">
+                        <h2 id="cityoutput"></h2>
+                        <p id="description"></p>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                    </div>
+                </section>
+            </section>
+
         </div>
-    </section>
-    <section class="ajax-section">
-        <div class="container">
-            <ul class="cities"></ul>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="container">
-        </div>
-    </footer>
-    <script src="app.js"></script>
-</body>
+        <script src="./assest/app.js"></script>
+    </body>
 
 </html>
